@@ -1,0 +1,30 @@
+def fib(n):
+    """
+    Prints fibonacci numbers and print it out
+    """
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+
+def fib1(n):
+    """
+    same login but returns the list of fibonacci numbers till n
+    """
+    a, b = 0, 1
+    result = []
+    while a < n:
+        result.append(a) # Append is function belonging to list object called result. We call it 'method'
+        a, b = b, a+b
+    return result
+
+
+if __name__ == '__main__':
+
+    # fib(2000)
+    # print("Return value of fib is :", fib(200)) # Return value of fib is 'None' (A built in name)
+    # print(fib.__doc__)
+
+    print(fib1(2000)) # fib1() return the list of fibonacci numbers
+
