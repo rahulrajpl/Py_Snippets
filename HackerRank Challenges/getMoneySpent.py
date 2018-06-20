@@ -7,8 +7,6 @@ import sys
 # Complete the getMoneySpent function below.
 #
 def getMoneySpent(keyboards, drives, b):
-    # n = len(keyboards)
-    # m = len(drives)
     ans = -1
     for keyboard in set(keyboards):
         for drive in set(drives):
