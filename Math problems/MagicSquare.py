@@ -1,5 +1,5 @@
 """
-To find the 3X3 magic square if set of 9 numbers are given between [0 9]
+To find one of eight possible 3X3 magic square if set of 9 numbers are given between [0 9]
 """
 
 def createMagicSquare(a):
