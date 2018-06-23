@@ -16,7 +16,6 @@ def climbingLeaderboard(scores, alice):
     s = len(scores)
     for alice_rank in alice:
         alice_ranking.append(s-bisect.bisect_right(scores, alice_rank)+1)
-    # print(alice_ranking)
     return alice_ranking
     # return [(s-bisect.bisect_right(scores, i)+1) for i in alice]
 if __name__ == '__main__':
