@@ -21,6 +21,7 @@ def cutTheSticks(arr):
         arr = [a for a in arr if a!=min(arr)]
     return cuts
 
+
 if __name__ == '__main__':
     n = 8
 
