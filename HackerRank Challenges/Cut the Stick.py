@@ -9,12 +9,16 @@ import sys
 
 def cutTheSticks(arr):
     cuts = []
-    cut_length = min(arr)
-    while len(arr):
-        cut_length = min(arr)
+    # cut_length = min(arr)
+    # while len(arr):
+    #     cut_length = min(arr)
+    #     cuts.append(len(arr))
+    #     arr = list(map(lambda x:x-cut_length, arr))
+    #     arr = list(filter(lambda j:j!=0, arr))
+    # return cuts
+    while arr:
         cuts.append(len(arr))
-        arr = list(map(lambda x:x-cut_length, arr))
-        arr = list(filter(lambda j:j!=0, arr))
+        arr = [a for a in arr if a!=min(arr)]
     return cuts
 
 if __name__ == '__main__':
