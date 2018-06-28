@@ -6,6 +6,8 @@ import random
 import re
 import sys
 
+CUTS_APPEND = cuts.append(len(arr))
+
 
 def cutTheSticks(arr):
     cuts = []
