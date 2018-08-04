@@ -9,16 +9,9 @@ import sys
 # Complete the kaprekarNumbers function below.
 def kaprekarNumbers(p, q):
     k = []
-    for i in range(p, q+1):
-        if i == 1:
-            k.append(str(i)+' ')
-            continue
-        if i == 2 or i == 3: continue
-        s = i * i
-        s = str(s)
-        s1 = s[:int(len(s)/2)]
-        s2 = s[int((len(s)/2)):]
-        if int(s1)+int(s2) == i:
+    for i in [x for x in range(p,q+1) if x not in range(2,4)]:
+        s = str(i*i)
+        if i == 1 or i == int(s[:int(len(s)/2)])+int(s[int((len(s)/2)):]):
             k.append(str(i)+' ')
     k = ''.join(k)
     if len(k)>0:
